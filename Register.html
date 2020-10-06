@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>&lt;Register&gt;</title>
+<style>
+   #menubar{background: rgb(73, 73, 20);
+            }
+            #menubar ul{/* 여백과 패딩 모두 */
+            margin: 0;
+            padding: 0;
+            width:567px;}
+            #menubar ul li{
+                display: inline-block; /* 새 줄로 넘어가지 않게*/
+                list-style-type: none; /* 마커 삭제*/
+                padding: 0px 37px; /* top=bottom=0, left=right=15px*/
+            }
+            #menubar ul li a {
+                color:white;
+                text-decoration: none; /*링크가 보이지 않게*/
+            }
+            #menubar ul li a:hover{
+                color: rgb(206, 115, 206);
+            }
+   body {
+      background-color: gray;
+   }
+    h1 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    div.pic {
+    margin: 10px 20px 30px 590px;}
+
+    #box2 {
+    margin: 10px 20px 30px 260px;
+    }
+    .button {
+  background-color:white; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  font-size: 15px;
+}
+#pho2{
+    cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+   <nav id="menubar">
+      <ul>
+         <li><a href="draft.html"><b>Home<b></b></a></li> 
+         <li><a href="reminisce.html">Reminisce</a></li>
+         <li><a href="Register.html">Register</a></li>
+         <li><a href="Q&A.html">Q & A</a></li>
+         
+      </ul>
+   </nav>
+<h1 style="font-size: 50px;">Register</h1>
+<h3 style="font-size: 25px;">&lt;Where have you been?&gt;</h3>
+<hr>
+<div style="background-color: rgb(136, 126, 103) ;padding:50px;">
+    <fieldset id="box2" style="border: 3px solid white; width: 70%;">
+        <legend style="font-size: 2em;">Recall/Prophecy</legend>
+
+<form>
+    <b>History</b> <input type="radio" name="place" value="1" checked>
+    <b>Future</b> <input type="radio" name="place" value="2">
+    <br><br>
+</form>
+<form>
+    From(Country)  &nbsp; <input type="text" placeholder="Republic of Korea"> To(Country) &nbsp;&nbsp;<input type="text" placeholder="Anywhere">
+</form>
+
+<form>
+    From(continent)  <input type="text" placeholder="Here" list="continents"> To(continent)  <input type="text" placeholder="There" list="continents">
+    <datalist id="continents">
+        <option value="Africa">
+        <option value="Asia">
+        <option value="Europe">
+        <option value="North America">
+        <option value="South America">
+        <option value="Oceania">
+            </datalist>
+
+    <datalist id="continents">
+        <option value="Africa">
+        <option value="Asia">
+        <option value="Europe">
+        <option value="North America">
+        <option value="South America">
+        <option value="Oceania">
+            </datalist>
+<br>
+From(Airport)  &nbsp;&nbsp;&nbsp;<input type="text" placeholder="ICN(Seoul)"> To(Airport) &nbsp;&nbsp;&nbsp;<input type="text" placeholder="Airport(Name of city)">
+<br>
+When &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"></form>
+With &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" placeholder="who" list="people">
+            <datalist id="people">
+                <option value="Alone">
+                <option value="Family">
+                <option value="Friend(s)">
+                <option value="Lover">
+                </option>
+            </datalist>
+
+<br><br>
+<button class="button button5" onclick="put()">Put in Pensieve</button>
+
+<script>
+function put() {
+  alert("Registered!");
+}
+</script>
+</fieldset></div>
+<div class="pic">
+<img id="pho2" src="platform.jpg" alt="diving_to_memory" width="700px" height="600px" onclick="location.href='showall.html'">
+</div>
+</body>
+</html>
